@@ -1,0 +1,24 @@
+---
+layout: base.ejs
+pagination:
+ data: articles
+ size: 1
+ alias: article
+permalink: /show/<%=article.slug%>/index.html
+---
+
+<div class="show-container">
+    <img src="<%=article.img%>" alt="<%=article.imgName%>">
+    <article>
+        <h1><%=article.title%></h1>
+        <%-article.content%>
+    </article>
+</div>
+
+<script>
+    const image = document.querySelectorAll("p img");
+    image.forEach(img => {
+      img.parentElement.style.textAlign = "center"
+      img.style.width = "100%";
+    })
+</script>

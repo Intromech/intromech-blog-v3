@@ -1,0 +1,163 @@
+/* 
+    font-family: 'Baskervville', serif;
+
+    font-family: 'Open Sans', sans-serif;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFE8D6;
+}
+
+h1, h2, h3, h4, h5, h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+nav {
+    width: 100vw;
+    height: 49px;
+    background: white;
+    color: black;
+    border-bottom: 1px solid rgb(54, 54, 54);
+    text-align: center;
+    padding: 11.5px 0;
+    position: fixed;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Baskervville', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.cartoon {
+    width: 284px;
+    margin: 100px auto auto auto;
+    height: 100vh;
+}
+
+.blog {
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container {
+    width: 335px;
+    margin: auto;
+}
+
+.card {
+    width: 100%;
+    background: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card-img {
+    width: 336;
+    height: 600;
+    background: blue;
+}
+
+.card-text {
+    margin: 30px 25px
+}
+
+.card-text h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: semi-bold;
+    font-size: 30px;
+    width: 284px;
+    line-height: 41px;
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    width: 279px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.card hr {
+    width: 283.72px;
+    border: 1px solid #E4E9FA;
+    margin: 12px auto;
+}
+
+.btn {
+    background:    #60a3f8;
+    border-radius: 1000px;
+    padding: 5px 10px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal normal 14px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    margin: 0 0 20px 25px;
+    text-decoration: none;
+}
+
+.show-container {
+    width: 362px;
+    margin: 70px auto;
+    background: white;
+    color: black;
+
+}
+
+.show-container article {
+    margin: 40px 15.5px;
+    padding-bottom: 2rem;
+}
+
+.show-container article h1, .show-container article p {
+    margin-bottom: 40px;
+}
+
+
+
+.show-container img {
+    width: 362px;
+    height: 362px;
+}
+
+.pagination a {
+    background:    #60a3f8;
+    border-radius: 1000px;
+    padding: 5px 10px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal normal 14px/1 "Open Sans", sans-serif;
+    text-align:    center;
+    text-decoration: none;
+}
+
+.pagination {
+    margin: 40px auto;
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-family: 'Baskervville', serif;
+    background: #000E25;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: white;
+}

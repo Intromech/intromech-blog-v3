@@ -1,0 +1,20 @@
+{
+  "name": "intromech-blog",
+  "version": "2.0.0",
+  "description": "Massively by HTML5 UP\r html5up.net | @ajlkn\r Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "html-to-text": "^5.1.1",
+    "showdown": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,42 @@
+---
+tags: blogs
+layout: base.ejs
+pagination:
+ data: articles
+ size: 12
+ alias: article
+---
+<div class="cartoon">
+    <!-- <img src="./img/hero-img.svg" alt="learn mechanical engineering. visit intromech.com"> -->
+    <img src="./img/cartoon1.svg" alt="">
+    <img src="./img/cartoon2.svg" alt="">
+</div>
+<h1 class="blog">Our Blog</h1>
+<div class="container">
+    <% pagination.items.forEach(article => { %>
+    <div class="card">
+        <img class="card-img" src="<%=article.img%>" alt="<%=article.imgName%>" width="100%">
+        <div class="card-text">
+            <h1><%=article.title%></h1>
+            <p><%=article.summary%></p>
+        </div>
+        <hr>
+        <a class="btn" href="/show/<%=article.slug%>">Read More</a>
+    </div>
+    <% }) %>
+</div>
+
+<div class="container">
+    <div class="pagination">
+        <% if (pagination.pageNumber != 0) { %>
+            <a href="<%=pagination.href.previous%>" class="previous">Prev</a>
+        <% } %>
+
+        <% collections.blogs.forEach(page => { %>
+            <% if (page.pageNumber != 0) { %>
+                <a href="/<%=page.pageNumber%>" class="page active"><%=page.pageNumber%></a>
+            <% } %>
+        <% }) %>
+            <a href="<%=pagination.href.next%>" class="next">Next</a>
+    </div>
+</div>

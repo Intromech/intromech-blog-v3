@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <% if (article.title) { %>
+          <title><%=article.title%></title>
+      <% } else { %>
+        <title>INTROMECH</title>
+      <%}%>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165240549-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165240549-2');
+    </script>
+    <script data-ad-client="ca-pub-4017104748148723" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style-min.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Intromech</a>
+  </nav>
+    <%- content %>
+    <footer>
+        <p>&copy; INTROMECH</p>
+    </footer>
+</body>
+</html>
