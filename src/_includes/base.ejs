@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Tag -->
       <% if (article.title) { %>
           <title><%=article.title%></title>
       <% } else { %>
         <title>INTROMECH</title>
+      <%}%>
+      <!-- Meta Description  -->
+      <% if (article.description) { %>
+        <meta name="description" content="<%=article.description%>">
+      <% } else { %>
+        <meta name="description" content="Intromech is a place where you can learn mechanical engineering by visualizing">
+      <%}%>
+      <!-- Meta Keywords -->
+      <% if (article.keywords) { %>
+        <meta name="keywords" content="<%=article.keywords%>">
+      <% } else { %>
+        <meta name="keywords" content="Mechanical Engineering, Intromech">
       <%}%>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165240549-2"></script>

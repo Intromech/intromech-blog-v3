@@ -20,7 +20,9 @@ module.exports = axios.get((`${process.env.HOST}/articles`),{
         img: data.image.url,
         slug: data.slug,
         categories: data.categories,
-        imgName: data.image.name
+        imgName: data.image.name,
+        description: data.meta_description,
+        keywords: data.meta_keywords
       };
       articlesArray.unshift(artObj);
     });
